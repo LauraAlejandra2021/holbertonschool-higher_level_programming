@@ -9,21 +9,6 @@ class Square:
         """ return a size"""
         return self.__size
 
-    def my_print(self):
-        i = 0
-        j = 0
-        self.new_method()
-
-    def new_method(self):
-        self.p = self.__size
-        if self.p is 0:
-            print('\n', end='')
-        else:
-            for i in range(0, self.p + 1):
-                for j in range(0, self.p + 1):
-                    print('#', end="")
-                print('\n', end="")
-
     @size.setter
     def size(self, value):
         """get size"""
@@ -42,3 +27,11 @@ class Square:
 
         elif size < 0:
             raise ValueError("size must be >= 0")
+
+        def my_print(self, size):
+            """comentar"""
+            p = 0
+            self.p = self.__size:
+                if self.p == 0
+            print ("n\")
+                else
