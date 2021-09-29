@@ -2,6 +2,6 @@
 """empty  class"""
 
 
-class Square:
+class Rectangle:
     """empty  class"""
     pass
