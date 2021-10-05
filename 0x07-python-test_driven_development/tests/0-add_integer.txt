@@ -1,0 +1,57 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer (2, 6)
+8
+
+>>> add_integer ("L", 8)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer (-20, 20)
+0
+
+>>> add_integer (?, 11)
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
+
+>>> add_integer (2, 23, 1)
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+>>> add_integer (3, "Laura")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer ()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> add_integer ( , 4 )
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
+
+>>> add_integer (2, 3, "u")
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+>>> len(__import__('0-add_integer').add_integer.__doc__) >= 3
+True
+
+>>> len(__import__('0-add_integer').__doc__) >= 5
+True
+
+>>> import os
+>>> os.popen('head -1 0-add_integer.py').read()
+'#!/usr/bin/python3\n'
+
+>>> add_integer('6e', 3)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
