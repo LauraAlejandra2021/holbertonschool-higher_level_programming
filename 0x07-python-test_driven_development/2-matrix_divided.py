@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 """
-asdfd sasf
-ssddd dcdc
-dddd dcdscdc
+this function divides
+by a number int or float the 
+numbers of a matrix.
 """
 
 
 def matrix_divided(matrix, div):
+    """
+    an int or a float divides the elements of a matrix
+    """
 
     mat1 = len(matrix[0])
     mat2 = len(matrix[1])
@@ -23,9 +26,8 @@ def matrix_divided(matrix, div):
     for i in range(len(matrix)):
         new_list.append([])
         for j in range(len(matrix[i])):
-            a = isinstance(matrix[i][j], (int, float))
+            a = isinstance(matrix[i][j], (int, float)) #isinstance compares parameters and returns a boolean
             if a is False:
-                raise TypeError(
-                    "matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
             new_list[i].append(round(matrix[i][j]/div, 2))
     return new_list
