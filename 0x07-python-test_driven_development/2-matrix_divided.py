@@ -29,5 +29,5 @@ def matrix_divided(matrix, div):
             a = isinstance(matrix[i][j], (int, float)) #isinstance compares parameters and returns a boolean
             if a is False:
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-            new_list[i].append(round(matrix[i][j]/div, 2))
+            new_list[i].append(round(matrix[i][j]/div, 2)) #round removes decimal places
     return new_list
