@@ -8,7 +8,7 @@ int or float
 
 def add_integer(a, b=98):
     """
-  pass parameters of another type to int or float
+    pass parameters of another type to int or float
     """
     if type(a) is float:
         a = int(a)

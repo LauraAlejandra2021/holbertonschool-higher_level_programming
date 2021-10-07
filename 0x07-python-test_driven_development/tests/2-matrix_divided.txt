@@ -63,3 +63,7 @@ ValueError: line 15 of the docstring for 2-matrix_divided.txt lacks blank after 
     Traceback (most recent call last):
     ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> import os
+    >>> os.path.exists("README.md")
+    True
