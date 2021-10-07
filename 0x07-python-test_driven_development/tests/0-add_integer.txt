@@ -59,3 +59,8 @@ TypeError: a must be an integer
 >>> import os
 >>> os.path.exists("README.md")
 True
+
+>>> add_integer ( 1 + "2")
+Traceback (most recent call last):
+...
+ TypeError: unsupported operand type(s) for +: 'int' and 'str'
