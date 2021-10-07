@@ -60,7 +60,7 @@ TypeError: a must be an integer
 >>> os.path.exists("README.md")
 True
 
->>> add_integer ( 1 + "2")
+>>> add_integer (10, "4")
 Traceback (most recent call last):
 ...
- TypeError: unsupported operand type(s) for +: 'int' and 'str'
+TypeError: a must be an integer
