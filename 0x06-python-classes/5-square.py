@@ -1,44 +1,39 @@
 #!/usr/bin/python3
-"""square area"""
+'''Class to Rectangle'''
 
 
-class Square:
-    """Class crate  a Square """
+class Rectangle:
+    '''This class is create a rectangle'''
+
+    def __init__(self, width=0, height=0):
+        '''Inicialization of width and height'''
+        self.height = height
+        self.width = width
+
     @property
-    def size(self):
-        """ return a size"""
-        return self.__size
+    def width(self):
+        '''getter to retrieve the width'''
+        return self.__width
 
-    def my_print(self):
-        i = 0
-        j = 0
-        self.new_method()
+    @width.setter
+    def width(self, value):
+        '''setter to get the width'''
+        self.__width = value
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        elif value < 0:
+            raise ValueError("width must be >= 0")
 
-    def new_method(self):
-        self.p = self.__size
-        if self.p is 0:
-            print('\n', end='')
-        else:
-            for i in range(0, self.p + 1):
-                for j in range(0, self.p + 1):
-                    print('#', end="")
-                print('\n', end="")
+    @property
+    def height(self):
+        '''getter to retrieve the height'''
+        return self.__height
 
-    @size.setter
-    def size(self, value):
-        """get size"""
-        self.__size = value
-
-    def area(self):
-        """Method that returns the area """
-        return self.__size ** 2
-
-    def __init__(self, size=0):
-        """ private square constructor and error handling"""
-
-        self.__size = size
-        if type(size) != int:
-            raise TypeError("size must be an integer ")
-
-        elif size < 0:
-            raise ValueError("size must be >= 0")
+    @height.setter
+    def height(self, value):
+        '''setter to get the height'''
+        self.__height = value
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        elif value < 0:
+            raise ValueError("height must be >= 0")
