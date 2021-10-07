@@ -34,3 +34,7 @@ TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
 >>> os.path.exists("README.md")
 True
 
+>>> say_my_name(None)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
