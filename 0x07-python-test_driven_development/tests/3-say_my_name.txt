@@ -38,3 +38,8 @@ True
 Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
+
+>>> say_my_name ('lau', 5)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
