@@ -68,4 +68,3 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 >>> os.path.exists ("README.md")
 True
 
->>> matrix_divided [[3, 9], [12, 15, 3]] / 3
