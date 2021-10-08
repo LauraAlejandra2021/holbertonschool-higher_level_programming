@@ -1,80 +1,44 @@
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
->>> matrix = [
-... [1, 4, 3],
-... [4, 5, 6]
-... ]
->>> matrix_divided (matrix, 8)
-[[0.12, 0.5, 0.38], [0.5, 0.62, 0.75]]
-
->>> matrix_divided (matrix, 'h')
-Traceback (most recent call last):
-...
-TypeError: div must be a number
-
->>> matrix_divided (matrix, 1.5)
-[[0.67, 2.67, 2.0], [2.67, 3.33, 4.0]]
 
 >>> matrix = [
-... [3, 'm', 8],
-... [6, 2, 9]
+... [9, 8, 7],
+... [6, 5, 4]
 ... ]
 
->>> matrix_divided (matrix, 2)
+>>> matrix_divided(matrix, 9)
+[[1.0, 0.89, 0.78], [0.67, 0.56, 0.44]]
+
+>>> matrix = [
+... [9, 'k', 7],
+... [6, 5, 4]
+... ]
+
+>>> matrix_divided(matrix, 3)
 Traceback (most recent call last):
 ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
+>>> matrix = [
+... [9, 'k', 7],
+... [6, 5, 4]
+... ]
 
->>> matrix_divided (matrix, 0)
-Traceback (most recent call last):
-...   
-ZeroDivisionError: division by zero
-
->>> matrix_divided (matrix, "div")
+>>> matrix_divided(matrix, 'a')
 Traceback (most recent call last):
 ...
 TypeError: div must be a number
-
->>> matrix_divided (matrix, div)
-Traceback (most recent call last):
-...
-NameError: name 'div' is not defined
-
->>> matrix_divided (matrix)
-Traceback (most recent call last):
-...
-TypeError: matrix_divided() missing 1 required positional argument: 'div'
-
->>> matrix_divided ()
-Traceback (most recent call last):
-...
-TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
-
->>> matrix_divided ([[1, 2], [4, 5, 6]], 2)
-Traceback (most recent call last):
-...
-TypeError: Each row of the matrix must have the same size
-
->>> matrix_divided ([["hello", 2, 3], [4, 5, 6]], 2)
-Traceback (most recent call last):
-...
-TypeError: matrix must be a matrix (list of lists) of integers/floats
-
->>> import os
->>> os.path.exists ("README.md")
-True
-
->>> matrix = [
-... [3, 4, 8],
-... [6, 2, 9, 5]
-... ]
-
->>> matrix_divided (matrix, 2)
-Traceback (most recent call last):
-...
-TypeError: Each row of the matrix must have the same size
 
 >>> matrix = [[9], [6]]
 
 >>> matrix_divided(matrix, 6)
 [[1.5], [1.0]]
+
+>>> len(__import__('2-matrix_divided').__doc__) >= 5
+True
+>>> len(__import__('2-matrix_divided').matrix_divided.__doc__) >= 3
+True
+>>> import os
+>>> os.popen('head -1 2-matrix_divided.py').read()
+'#!/usr/bin/python3\n'
+>>> os.popen('pycodestyle 2-matrix_divided.py').read()
+''
