@@ -17,7 +17,7 @@ def matrix_divided(matrix, div):
         for n in range(len(matrix[t])):
             if len(matrix[t]) != len1:
                 raise TypeError("Each row of the matrix "
-                                        "must have the same size")
+                                "must have the same size")
     if isinstance(div, (int, float)) is False:
         raise TypeError("div must be a number")
     if div == 0:
@@ -30,7 +30,7 @@ def matrix_divided(matrix, div):
             a = isinstance(matrix[i][j], (int, float))
             if a is False:
                 raise TypeError("matrix must be a matrix (list of lists) "
-                                        "of integers/floats")
+                                "of integers/floats")
             # round removes decimal places
             new_list[i].append(round(matrix[i][j]/div, 2))
     return new_list
