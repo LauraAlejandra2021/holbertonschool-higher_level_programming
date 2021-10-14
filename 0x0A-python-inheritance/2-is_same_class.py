@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """"
-function that tells me 
-if an objero is an 
+function that tells me
+if an objero is an
 instance of a class
 
 """
+
 
 def is_same_class(obj, a_class):
     """
@@ -12,5 +13,5 @@ def is_same_class(obj, a_class):
     """
     if type(obj) == a_class:
         return True
-    else: 
-        return False 
+    else:
+        return False
