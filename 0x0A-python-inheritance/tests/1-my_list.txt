@@ -54,4 +54,3 @@ pycodestyle correct:
 
 >>> os.popen('pycodestyle 1-my_list.py').read()
 ''
- 
