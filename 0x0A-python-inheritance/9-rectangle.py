@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
-function that inherits
-a class to use
-its method
+function that inherits a class to use its method
 """
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
@@ -25,4 +23,5 @@ class Rectangle(BaseGeometry):
         return self.__width * self.__height
 
     def __str__(self):
-        return ("[{}] {}/{}".format(self.__class__.__name__,self.__width, self.__height))
+        return ("[{}] {}/{}".format(self.__class__.__name__,
+                                    self.__width, self.__height))
