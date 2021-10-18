@@ -54,7 +54,7 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
 
     @property
-    def x(self, value):
+    def x(self):
         """getter x"""
         return self.__x
 
