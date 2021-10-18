@@ -7,12 +7,12 @@ print(s_my_list)
 print(type(s_my_list))
 
 my_dict = { 
-    'id': 12,
-    'name': "John",
+    'id': 37,
+    'name': "laura",
     'places': [ "San Francisco", "Tokyo" ],
     'is_active': True,
     'info': {
-        'age': 36,
+        'age': 32,
         'average': 3.14
     }
 }
