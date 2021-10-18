@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-script that adds all the
-arguments to a python list
-and then saves them to a file
+    script that adds all the
+    arguments to a python list
+    and then saves them to a file
 """
 import sys
 import os
@@ -13,7 +13,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 if os.path.exists("add_item.json") is True:
     """
-    a list the saved Json representation
+        a list the saved Json representation
     """
 
     my_lyst1 = list(load_from_json_file("add_item.json"))
