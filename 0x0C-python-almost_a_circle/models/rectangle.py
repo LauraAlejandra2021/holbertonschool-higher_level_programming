@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-create
-a class
-rectangle
+create and inherit
+classes, attribute definition
+and attribute validation.
 """
 from models.base import Base
 
@@ -41,7 +41,7 @@ class Rectangle(Base):
     def height(self, value):
         """setter of height"""
         self.__height = value
-        
+
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -53,7 +53,7 @@ class Rectangle(Base):
         return self.__x
 
     @x.setter
-    def x(self,value):
+    def x(self, value):
         """setter x"""
         self.__x = value
 
@@ -61,7 +61,6 @@ class Rectangle(Base):
             raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
-            
 
     @property
     def y(self):
