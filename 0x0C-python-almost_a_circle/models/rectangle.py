@@ -4,13 +4,19 @@ create and inherit
 classes, attribute definition
 and attribute validation.
 """
+
+
 from models.base import Base
+""" import class"""
 
 
 class Rectangle(Base):
+    """ new class"""
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """constructor method rectangle
         """
+
         super().__init__(id)
         self.width = width
         self.height = height
