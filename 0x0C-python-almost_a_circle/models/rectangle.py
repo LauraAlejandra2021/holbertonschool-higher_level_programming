@@ -86,3 +86,12 @@ class Rectangle(Base):
     def area(self):
         """new method, return area"""
         return(self.width * self.height)
+
+    def display(self):
+        """print rectangle"""
+
+        for i in range (self.height):
+            print("", end="")
+            for j in range (self.width):
+                print("#", end="")
+            print(" ")
