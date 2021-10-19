@@ -116,4 +116,5 @@ class Rectangle(Base):
                 self.__x = args[i]
             if i == 4:
                 self.__y = args[i]
-            
+       
+# no pude con *kwargs pendiente por realizar
