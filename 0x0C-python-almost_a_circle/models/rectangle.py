@@ -117,4 +117,4 @@ class Rectangle(Base):
             if i == 4:
                 self.__y = args[i]
        
-# no pude con *kwargs pendiente por realizar
+# no pude con *kwargs pendiente por realizar y por estudiar
