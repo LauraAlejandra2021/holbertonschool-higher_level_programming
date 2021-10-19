@@ -90,7 +90,7 @@ class Rectangle(Base):
     def display(self):
         """print rectangle"""
         print("\n" * self.y, end="")
-        
+
         for i in range(self.height):
             for k in range(self.x):
                 print(" ", end="")
@@ -102,5 +102,3 @@ class Rectangle(Base):
         """ void str"""
         return(f"[Rectangle] \
 ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
-
-    
