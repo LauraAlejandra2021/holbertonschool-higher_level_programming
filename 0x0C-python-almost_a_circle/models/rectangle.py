@@ -31,12 +31,11 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         """setter of width"""
-        self.__width = value
-
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
+        self.__width = value
 
     @property
     def height(self):
@@ -103,18 +102,20 @@ class Rectangle(Base):
         return(f"[Rectangle] \
 ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """add the arguments to the attributes"""
-        for i in range(len(args)):
-            if i == 0:
-                self.id = args[i]
-            if i == 1:
-                self.__width = args[i]
-            if i == 2:
-                self.__height = args[i]
-            if i == 3:
-                self.__x = args[i]
-            if i == 4:
-                self.__y = args[i]
-       
-# no pude con *kwargs pendiente por realizar y por estudiar
+        if args:
+            for i in range(len(args)):
+                if i == 0:
+                    self.id = args[i]
+                if i == 1:
+                    self.__width = args[i]
+                if i == 2:
+                    self.__height = args[i]
+                if i == 3:
+                    self.__x = args[i]
+                if i == 4:
+                    self.__y = args[i]
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
