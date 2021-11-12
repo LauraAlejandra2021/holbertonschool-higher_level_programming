@@ -15,3 +15,7 @@ Guido van Rossum began working on Python in the late 1980s, as a successor to th
 Python consistently ranks as one of the most popular programming languages.
   https://en.wikipedia.org/wiki/Python_(programming_language)
 </div>
+
+<h1> Proyects <h1>
+
+<img width="55%" align="right" alt="Github" src="https://media-exp1.licdn.com/dms/image/C4D22AQFiGB1Lxzi8vg/feedshare-shrink_800/0/1636681257990?e=1639612800&v=beta&t=-ws-M4IQE6Fy5i5qbUzFQn_z5D0gNIDIdzVcUt0Hzrg" />
