@@ -1,2 +1,2 @@
  --Create a database
- CREATE DATABASE hbtn_0c_0DROP;
+ CREATE DATABASE hbtn_0c_0 DROP;
