@@ -1,4 +1,4 @@
 -- search a registry by id
-SELECT count *
+SELECT count (*)
 FROM first_table
 WERE id = 89;
